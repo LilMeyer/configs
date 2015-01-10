@@ -5,7 +5,8 @@
 # alias
 alias sound-up="pactl set-sink-volume 0 -- +10%"
 alias sound-down="pactl set-sink-volume 0 -- -10%"
-
+alias gitp="git push"
+alias gits="git status"
 
 # oh-my-zsh checkout (optional)
 ZSH=$HOME/.oh-my-zsh
