@@ -2,6 +2,10 @@
 #
 # Features: tab-completion, colors, Homebrew, rbenv, nifty prompt
 
+# alias
+alias sound-up="pactl set-sink-volume 0 -- +10%"
+alias sound-down="pactl set-sink-volume 0 -- -10%"
+
 
 # oh-my-zsh checkout (optional)
 ZSH=$HOME/.oh-my-zsh
