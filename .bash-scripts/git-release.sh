@@ -23,5 +23,5 @@ echo $version
 git flow release start $version
 npm version patch --no-git-tag-version
 git commit -am "release(${version}): bump version"
-# git flow release finish "${version}"
+git flow release finish "${version}"
 

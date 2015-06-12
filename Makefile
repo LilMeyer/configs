@@ -1,5 +1,4 @@
-install:
-	cp .zshrc ~/
-	cp -r .shrc ~/
+all:
+	scons -Q
 
-.PHONY: install
+.PHONY: all
