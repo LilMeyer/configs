@@ -62,4 +62,7 @@ if linux:
   copyIfNotExists(".bash-scripts", os.environ['HOME'] + "/.bash-scripts")
   print "=== END ==="
 
+
+if not os.path.exists(os.environ['HOME'] + "/bin"):
+  os.mkdir(os.environ['HOME'] + "/bin")
 os.symlink(os.environ['HOME'] + "/.bash-scripts/git-release.sh", os.environ['HOME'] + "/bin/git-release")

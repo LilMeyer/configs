@@ -7,6 +7,7 @@ alias sound-up="pactl set-sink-volume 0 -- +10%"
 alias sound-down="pactl set-sink-volume 0 -- -10%"
 alias gitp="git push"
 alias gits="git status"
+alias gitc="git checkout"
 
 # oh-my-zsh checkout (optional)
 ZSH=$HOME/.oh-my-zsh
@@ -56,3 +57,7 @@ export GREP_COLOR='1;32'
 for file in ~/.shrc/*.sh; do
   source "$file"
 done
+
+if [ -d "$HOME/bin" ] ; then
+  PATH="$HOME/bin:$PATH"
+fi
