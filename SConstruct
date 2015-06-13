@@ -35,6 +35,7 @@ def copyDirectory(src, dst):
 def copyIfNotExists(src, dst):
   for src_dir, dirs, files in os.walk(src):
     dst_dir = src_dir.replace(src, dst)
+    print dst_dir
     if not os.path.exists(dst_dir):
       os.mkdir(dst_dir)
       print "creating " + dst_dir
@@ -45,11 +46,16 @@ def copyIfNotExists(src, dst):
         shutil.copy(src_file, dst_dir)
         print "copy " + src_file + " " + dst_dir
 
+def copyFileIfNotExisting(src, dst):
+  if not os.path.exists(dst):
+    shutil.copy(src, dst)
+    print "copy " + src + " " + dst
+
 
 if darwin:
   print "=== MAC OSX ==="
   print "copying..."
-  copyIfNotExists(".zshrc", os.environ['HOME'])
+  copyFileIfNotExisting(".zshrc", os.environ['HOME'] + "/.zshrc")
   copyIfNotExists(".shrc", os.environ['HOME'] + "/.shrc")
   copyIfNotExists(".bash-scripts", os.environ['HOME'] + "/.bash-scripts")
   print "=== END ==="
@@ -57,7 +63,7 @@ if darwin:
 if linux:
   print "=== LINUX ==="
   print "copying..."
-  copyIfNotExists(".zshrc", os.environ['HOME'])
+  copyFileIfNotExisting(".zshrc", os.environ['HOME'] + "/.zshrc")
   copyIfNotExists(".shrc", os.environ['HOME'] + "/.shrc")
   copyIfNotExists(".bash-scripts", os.environ['HOME'] + "/.bash-scripts")
   print "=== END ==="
@@ -65,4 +71,6 @@ if linux:
 
 if not os.path.exists(os.environ['HOME'] + "/bin"):
   os.mkdir(os.environ['HOME'] + "/bin")
-os.symlink(os.environ['HOME'] + "/.bash-scripts/git-release.sh", os.environ['HOME'] + "/bin/git-release")
+
+if not os.path.exists(os.environ['HOME'] + "/bin/git-release"):
+  os.symlink(os.environ['HOME'] + "/.bash-scripts/git-release.sh", os.environ['HOME'] + "/bin/git-release")
