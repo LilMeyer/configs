@@ -1,10 +1,11 @@
 Environment configuration
 ===
 
-### Prerequises:
+### Prerequisites:
 - [awesome](http://awesome.naquadah.org/)
-- [jsawk](https://github.com/micha/jsawk)
+- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [git flow](https://github.com/nvie/gitflow)
+- [jsawk](https://github.com/micha/jsawk)
 
 ### To install:
 ```sh
