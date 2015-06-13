@@ -27,15 +27,14 @@ def copyDirectory(src, dst):
       dst_file = os.path.join(dst_dir, file_)
       if os.path.exists(dst_file):
         os.remove(dst_file)
-        # print "remove " + dst_file
+        print "remove " + dst_file
       shutil.copy(src_file, dst_dir)
-      # print "copy " + src_file + " " + dst_dir
+      print "copy " + src_file + " " + dst_dir
 
 
 def copyIfNotExists(src, dst):
   for src_dir, dirs, files in os.walk(src):
     dst_dir = src_dir.replace(src, dst)
-    print dst_dir
     if not os.path.exists(dst_dir):
       os.mkdir(dst_dir)
       print "creating " + dst_dir
@@ -65,6 +64,7 @@ if linux:
   print "copying..."
   copyFileIfNotExisting(".zshrc", os.environ['HOME'] + "/.zshrc")
   copyIfNotExists(".shrc", os.environ['HOME'] + "/.shrc")
+  copyDirectory(".config", os.environ['HOME'] + "/.config")
   copyIfNotExists(".bash-scripts", os.environ['HOME'] + "/.bash-scripts")
   print "=== END ==="
 
