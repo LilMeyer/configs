@@ -1,6 +1,8 @@
 Environment configuration
 ===
 
+### Prerequises:
+
 ### To install:
 ```sh
 make
@@ -13,11 +15,17 @@ cp -r .shrc ~/
 
 GIT
 ---
-
-Display line numbers when greping:
-
+Test authentication to github:
+```sh
+ssh -T git@github.com
 ```
+Display line numbers when greping:
+```sh
 git config --global grep.lineNumber true
+```
+Change editor:
+```sh
+git config --global core.editor vim
 ```
 
 
