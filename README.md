@@ -48,7 +48,7 @@ gsettings set org.gnome.desktop.session idle-delay 0
 
 Screenshot
 ---
-![Screenshot](https://github.com/lilmeyer/configs/raw/master/screenshot.jpg)
+![Screenshot](https://raw.githubusercontent.com/LilMeyer/configs/master/screenshot.png)
 
 References
 ---
