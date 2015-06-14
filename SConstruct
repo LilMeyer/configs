@@ -63,7 +63,7 @@ if linux:
   print "=== LINUX ==="
   print "copying..."
   copyFileIfNotExisting(".zshrc", os.environ['HOME'] + "/.zshrc")
-  copyIfNotExists(".shrc", os.environ['HOME'] + "/.shrc")
+  copyDirectory(".shrc", os.environ['HOME'] + "/.shrc")
   copyDirectory(".config", os.environ['HOME'] + "/.config")
   copyIfNotExists(".bash-scripts", os.environ['HOME'] + "/.bash-scripts")
   print "=== END ==="

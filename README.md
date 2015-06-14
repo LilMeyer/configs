@@ -1,6 +1,9 @@
 Environment configuration
 ===
 
+Warning: your .vimrc, .zshrc and .config/awesome/rc.lua files will be overwritten.
+If you want additional sh configuration, place it in .shrc/non-versioned.sh.
+
 ### Prerequisites:
 - [awesome](http://awesome.naquadah.org/)
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
@@ -8,17 +11,18 @@ Environment configuration
 - [jsawk](https://github.com/micha/jsawk)
 
 ### To install:
+
 ```sh
 make
 ```
 
-```sh
-cp .zshrc ~/
-cp -r .shrc ~/
-```
-
 Git
 ---
+Display version
+```sh
+git --version
+```
+
 Test authentication to github:
 ```sh
 ssh -T git@github.com
@@ -36,6 +40,11 @@ git config --global core.editor vim
 
 Ubuntu
 ---
+Display version
+```sh
+cat /etc/issue
+ ```
+
 Take a screenshot
 ```sh
 import -window root -quality 98 screenshot.png
@@ -47,6 +56,19 @@ gsettings set org.gnome.desktop.session idle-delay 0
 ```
 
 
+Awesome
+---
+Display version
+```sh
+awesome -v
+```
+Changed shorcuts
+Kill window (instead of Mod4 + Shift + c)
+```sh
+Mod4 + c
+```
+
+
 Screenshot
 ---
 ![Screenshot](https://raw.githubusercontent.com/LilMeyer/configs/master/screenshot.png)
@@ -55,3 +77,5 @@ References
 ---
 - [Ubuntu screenshot](https://awesome.naquadah.org/wiki/Screenshots)
 - [Github authentication](https://developer.github.com/guides/using-ssh-agent-forwarding/#testing-ssh-agent-forwarding)
+- [Awesome shortcuts](https://awesome.naquadah.org/doc/manpages/awesome.1.html)
+- [Awesome volume and control display](https://awesome.naquadah.org/wiki/Volume_control_and_display)
