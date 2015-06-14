@@ -14,7 +14,7 @@ local menubar = require("menubar")
 -- Load Debian menu entries
 require("debian.menu")
 
--- require("volume")
+require("volume")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -45,6 +45,7 @@ end
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init("/usr/share/awesome/themes/sky/theme.lua")
 theme.wallpaper = ".config/awesome/wallpaper.jpg"
+
 
 -- This is used later as the default terminal and editor to run.
 terminal = "x-terminal-emulator"

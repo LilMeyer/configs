@@ -68,6 +68,20 @@ Kill window (instead of Mod4 + Shift + c)
 Mod4 + c
 ```
 
+#### Xephyr
+Installation
+```sh
+sudo apt-get install xserver-xephyr
+```
+Run
+```sh
+Xephyr -ac -br -noreset -screen 800x600 :1
+```
+
+```sh
+Xephyr :1 -ac -br -noreset -screen 900x300 & DISPLAY=:1.0 awesome -c ~/.config/awesome/rc.test.lua &
+```
+
 
 Screenshot
 ---
@@ -79,3 +93,5 @@ References
 - [Github authentication](https://developer.github.com/guides/using-ssh-agent-forwarding/#testing-ssh-agent-forwarding)
 - [Awesome shortcuts](https://awesome.naquadah.org/doc/manpages/awesome.1.html)
 - [Awesome volume and control display](https://awesome.naquadah.org/wiki/Volume_control_and_display)
+- [Awesome Xephyr](https://awesome.naquadah.org/wiki/Using_Xephyr)
+- [Awesome debugging](https://wiki.archlinux.org/index.php/Awesome#Debugging_rc.lua)
