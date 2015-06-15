@@ -38,6 +38,17 @@ Change editor:
 git config --global core.editor vim
 ```
 
+Checkout branch [[*]](http://stackoverflow.com/questions/1783405/checkout-remote-git-branch)
+```sh
+git fetch
+git checkout branch_name
+```
+If multiple remotes
+```sh
+checkout -b branch_name remote-name/branch_name
+```
+
+
 Ubuntu
 ---
 Display version
