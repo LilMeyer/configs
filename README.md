@@ -73,7 +73,7 @@ Display version
 ```sh
 awesome -v
 ```
-Changed shorcuts
+#### Changed shorcuts
 Kill window (instead of Mod4 + Shift + c)
 ```sh
 Mod4 + c

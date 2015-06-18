@@ -59,6 +59,10 @@ for file in ~/.shrc/*.sh; do
   source "$file"
 done
 
+for file in ~/.shrc/*.zsh; do
+  source "$file"
+done
+
 if [ -d "$HOME/bin" ] ; then
   PATH="$HOME/bin:$PATH"
 fi
