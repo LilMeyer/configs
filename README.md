@@ -1,8 +1,8 @@
 Environment configuration
 ===
 
-Warning: your .vimrc, .zshrc and .config/awesome/rc.lua files will be overwritten.
-If you want additional sh configuration, place it in .shrc/non-versioned.sh.
+Warning: your `.vimrc`, `.zshrc` and `.config/awesome/rc.lua` files will be overwritten.
+If you want additional sh configuration, place it in `.shrc/non-versioned.sh`.
 
 ### Prerequisites:
 - [awesome](http://awesome.naquadah.org/)
@@ -50,6 +50,25 @@ If multiple remotes
 checkout -b branch_name remote-name/branch_name
 ```
 
+Generate ssh key [[*]](https://help.github.com/articles/generating-ssh-keys/)
+```sh
+ssh-keygen -t rsa -C "your_email@example.com"
+```
+
+
+Use multiple github accounts, change file ~/.ssh/config [[*]](http://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574)
+```sh
+Host github-work
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_work
+```
+Then clone repository with 
+```sh
+git clone git@github-work:account/repo-name.git
+# instead of
+git clone git@github.com:account/repo-name.git
+```
 
 Ubuntu
 ---
@@ -115,6 +134,11 @@ Centos
 Restart ssh service [[*]](http://wiki.centos.org/HowTos/Network/SecuringSSH)
 ```sh
 service sshd restart
+```
+
+In sshd_config
+```sh
+AuthorizedKeysFile      .ssh/authorized_keys
 ```
 
 Ssh mode verbose
