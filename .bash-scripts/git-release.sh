@@ -9,7 +9,7 @@ then
 fi
 
 
-version=$(cat package.json | jsawk "return this.version")
+version=$(cat package.json | json version)
 
 # Build array from version string.
 

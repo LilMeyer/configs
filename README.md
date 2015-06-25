@@ -7,7 +7,7 @@ If you want additional sh configuration, place it in `.shrc/non-versioned.sh`.
 ### Prerequisites:
 - [awesome](http://awesome.naquadah.org/)
 - [git flow](https://github.com/nvie/gitflow)
-- [jsawk](https://github.com/micha/jsawk)
+- [json](https://github.com/zpoley/json-command) `sudo npm install -g json`
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ### To install:
