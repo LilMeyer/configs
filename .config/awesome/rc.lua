@@ -43,7 +43,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init("/usr/share/awesome/themes/sky/theme.lua")
+beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
 theme.wallpaper = ".config/awesome/wallpaper.jpg"
 
 -- This is used later as the default terminal and editor to run.
