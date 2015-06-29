@@ -22,6 +22,17 @@ Kill window (instead of Mod4 + Shift + c)
 Mod4 + c
 ```
 
+### Sublime Text
+
+#### Packages
+- [Alignment](http://wbond.net/sublime_packages/alignment)
+- [GitGutter](https://github.com/jisaacks/GitGutter)
+- [SublimeCodeIntel](https://github.com/SublimeCodeIntel/SublimeCodeIntel)
+
+#### Color Schemes
+- [Itf.flat](http://itsthatguy.com/post/70191573560/sublime-text-theme-itg-flat)
+
+
 Screenshot
 ---
 ![Screenshot](https://raw.githubusercontent.com/LilMeyer/configs/master/screenshot.png)
