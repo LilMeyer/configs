@@ -83,6 +83,11 @@ Kill window (instead of Mod4 + Shift + c)
 Mod4 + c
 ```
 
+#### Take a screenshot
+```sh
+import -window root -quality 98 screenshot.png
+```
+
 ### Sublime Text
 
 #### Packages
