@@ -10,6 +10,13 @@ alias gits="git status"
 alias gitc="git checkout"
 alias open="nautilus --browser ."
 
+alias co="git checkout"
+alias br="git branch"
+alias ci="git commit"
+alias st="git status"
+alias unstage="git reset HEAD --"
+
+
 # oh-my-zsh checkout (optional)
 ZSH=$HOME/.oh-my-zsh
 

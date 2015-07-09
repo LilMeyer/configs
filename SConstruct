@@ -50,11 +50,13 @@ def copyFileIfNotExisting(src, dst):
     shutil.copy(src, dst)
     print "copy " + src + " " + dst
 
+def copyFile(src, dst):
+  shutil.copy(src, dst)
 
 if darwin:
   print "=== MAC OSX ==="
   print "copying..."
-  copyFileIfNotExisting(".zshrc", os.environ['HOME'] + "/.zshrc")
+  copyFile(".zshrc", os.environ['HOME'] + "/.zshrc")
   copyIfNotExists(".shrc", os.environ['HOME'] + "/.shrc")
   copyIfNotExists(".bash-scripts", os.environ['HOME'] + "/.bash-scripts")
   print "=== END ==="
@@ -62,7 +64,7 @@ if darwin:
 if linux:
   print "=== LINUX ==="
   print "copying..."
-  copyFileIfNotExisting(".zshrc", os.environ['HOME'] + "/.zshrc")
+  copyFile(".zshrc", os.environ['HOME'] + "/.zshrc")
   copyDirectory(".shrc", os.environ['HOME'] + "/.shrc")
   copyDirectory(".config", os.environ['HOME'] + "/.config")
   copyDirectory(".bash-scripts", os.environ['HOME'] + "/.bash-scripts")
