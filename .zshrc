@@ -16,6 +16,13 @@ alias ci="git commit"
 alias st="git status"
 alias unstage="git reset HEAD --"
 
+alias s="subl ."
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
 
 # oh-my-zsh checkout (optional)
 ZSH=$HOME/.oh-my-zsh
