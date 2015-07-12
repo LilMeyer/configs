@@ -16,67 +16,8 @@ If you want additional sh configuration, place it in `.shrc/non-versioned.sh`.
 make
 ```
 
-Git
----
-Display version
-```sh
-git --version
-```
-
-Test authentication to github:
-```sh
-ssh -T git@github.com
-```
-
-Display line numbers when greping:
-```sh
-git config --global grep.lineNumber true
-```
-
-Change editor:
-```sh
-git config --global core.editor vim
-```
-
-Checkout branch [[*]](http://stackoverflow.com/questions/1783405/checkout-remote-git-branch)
-```sh
-git fetch
-git checkout branch_name
-```
-If multiple remotes
-```sh
-checkout -b branch_name remote-name/branch_name
-```
-
-
-Ubuntu
----
-Display version
-```sh
-cat /etc/issue
-```
-
-Take a screenshot
-```sh
-import -window root -quality 98 screenshot.png
-```
-
-Prevent screen from locking
-```sh
-gsettings set org.gnome.desktop.session idle-delay 0
-```
-
-Create a symbolic link [[*]](https://en.wikipedia.org/wiki/Symbolic_link)
-```sh
-sudo ln -s /path/to/redis/redis-stable/src/redis-cli /usr/bin/redis-cli
-```
-
 Awesome
 ---
-Display version
-```sh
-awesome -v
-```
 #### Changed shorcuts
 Kill window (instead of Mod4 + Shift + c)
 ```sh
