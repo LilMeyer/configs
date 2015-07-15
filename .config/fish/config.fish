@@ -3,6 +3,7 @@
 # and https://github.com/fish-shell/fish-shell/pull/880
 
 . ~/.config/fish/aliases.fish
+. ~/.config/fish/non-versioned.fish
 
 set normal (set_color normal)
 set magenta (set_color magenta)

@@ -1,3 +1,4 @@
 .sconsign.dblite
 .shrc/non-versioned.sh
 .shrc/non-versioned.zsh
+.config/fish/non-versioned.fish
