@@ -1,6 +1,4 @@
 alias l "ls -la"
-alias sound-up "pactl set-sink-volume 0 -- +10%"
-alias sound-down "pactl set-sink-volume 0 -- -10%"
 alias gitp "git push"
 alias gits "git status"
 alias gitc "git checkout"
