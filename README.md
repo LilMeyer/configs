@@ -8,13 +8,28 @@ If you want additional sh configuration, place it in `.shrc/non-versioned.sh`.
 - [awesome](http://awesome.naquadah.org/)
 - [git flow](https://github.com/nvie/gitflow)
 - [json](https://github.com/zpoley/json-command) `sudo npm install -g json`
+- scons sudo apt-get install scons
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+
+### Some utilities :
+
+```sh
+sudo apt-get install scons xclip npm
+sudo npm install -g json
+```
+
 
 ### To install:
 
 ```sh
 make
 ```
+Reload awesome:
+
+```sh
+Ctrl + Mod4 + R
+```
+
 
 Awesome
 ---
@@ -46,5 +61,6 @@ Screenshot
 
 References
 ---
+- [Bash git prompt](https://github.com/magicmonty/bash-git-prompt)
 - [Centos OpenSSH](http://wiki.centos.org/HowTos/Network/SecuringSSH)
 - [Ubuntu screenshot](https://awesome.naquadah.org/wiki/Screenshots)
