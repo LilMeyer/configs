@@ -14,8 +14,8 @@ If you want additional sh configuration, place it in `.shrc/non-versioned.sh`.
 ### Some utilities :
 
 ```sh
-sudo apt-get install scons xclip npm
-sudo npm install -g json
+sudo apt-get install scons xclip npm docker
+sudo npm install -g json jshint
 ```
 
 
