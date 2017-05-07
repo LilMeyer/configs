@@ -44,7 +44,9 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
-theme.wallpaper = ".config/awesome/wallpaper.jpg"
+
+math.randomseed(os.time())
+theme.wallpaper = ".config/awesome/wallpaper-" .. math.random(1, 19) .. ".jpg"
 
 -- This is used later as the default terminal and editor to run.
 terminal = "x-terminal-emulator"
