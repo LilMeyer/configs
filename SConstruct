@@ -56,16 +56,12 @@ def copyFile(src, dst):
 if darwin:
   print "=== MAC OSX ==="
   print "copying..."
-  copyFile(".zshrc", os.environ['HOME'] + "/.zshrc")
-  copyIfNotExists(".shrc", os.environ['HOME'] + "/.shrc")
   copyIfNotExists(".bash-scripts", os.environ['HOME'] + "/.bash-scripts")
   print "=== END ==="
 
 if linux:
   print "=== LINUX ==="
   print "copying..."
-  copyFile(".zshrc", os.environ['HOME'] + "/.zshrc")
-  copyDirectory(".shrc", os.environ['HOME'] + "/.shrc")
   copyDirectory(".config", os.environ['HOME'] + "/.config")
   copyDirectory(".bash-scripts", os.environ['HOME'] + "/.bash-scripts")
   print "=== END ==="
