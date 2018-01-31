@@ -64,6 +64,7 @@ if linux:
   print "copying..."
   copyDirectory(".config", os.environ['HOME'] + "/.config")
   copyDirectory(".bash-scripts", os.environ['HOME'] + "/.bash-scripts")
+  copyDirectory(".i3", os.environ['HOME'] + "/.i3")
   print "=== END ==="
 
 
