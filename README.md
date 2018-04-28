@@ -42,10 +42,6 @@ import -window root -quality 98 screenshot.png
 - [Itf.flat](http://itsthatguy.com/post/70191573560/sublime-text-theme-itg-flat)
 - [One Dark](https://github.com/IceTimux/one-dark-sublime-text-3-color-scheme)
 
-Screenshot
----
-![Screenshot](https://raw.githubusercontent.com/LilMeyer/configs/master/screenshot.png)
-
 References
 ---
 - [Bash git prompt](https://github.com/magicmonty/bash-git-prompt)
