@@ -46,6 +46,7 @@ bindsym $mod+c kill
 
 # lock the session
 bindsym $mod+F1 exec i3lock -c 000000
+bindsym $mod+F3 exec shutdown now
 
 # start dmenu (a program launcher)
 bindsym $mod+p exec dmenu_run
@@ -105,11 +106,11 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # move the currently focused window to the scratchpad
-bindsym $mod+Shift+minus move scratchpad
+# bindsym $mod+Shift+minus move scratchpad
 
 # Show the next scratchpad window or hide the focused scratchpad window.
 # If there are multiple scratchpad windows, this command cycles through them.
-bindsym $mod+minus scratchpad show
+# bindsym $mod+minus scratchpad show
 
 # switch workspace next/prev
 bindsym $mod+Left workspace prev
@@ -138,6 +139,12 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
+
+# Sound countrol
+bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 5%-"
+bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master 5%+"
+bindsym XF86AudioMute exec "amixer -D pulse set Master 1+ toggle"
+
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
