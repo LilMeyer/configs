@@ -1,7 +1,7 @@
 Environment configuration
 ===
 
-Warning: your `.vimrc`, `.zshrc` and `.config/awesome/rc.lua` files will be overwritten.
+Warning: your `.vimrc` and `.config/awesome/rc.lua` files will be overwritten.
 If you want additional sh configuration, place it in `.shrc/non-versioned.sh`.
 
 ### Prerequisites:
