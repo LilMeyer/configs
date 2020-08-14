@@ -32,16 +32,22 @@ set $up k
 set $down j
 set $left h
 set $right l
+set $sound_toggle Print
+set $sound_down Scroll_Lock
+set $sound_up Pause
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
+# Display a message
 # bindsym $mod+Return exec "i3-nagbar -t warning -m $(xcwd)"
-# bindsym $mod+Return exec "gnome-terminal --working-directory=$(pwd)"
-# bindsym $mod+Return exec gnome-terminal --working-directory="`xcwd`"
+
+# start a terminal
 bindsym $mod+Return exec 'i3-sensible-terminal'
-# bindsym $mod+Return exec '/home/romain/.local/bin/i3-shell'
+
+bindsym $sound_toggle exec amixer set Master toggle
+bindsym $sound_down exec amixer set PCM 5%-
+bindsym $sound_up exec amixer set PCM 5%+
 
 # kill focused window
 bindsym $mod+c kill
