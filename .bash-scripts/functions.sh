@@ -1,3 +1,5 @@
+######### Functions ############
+
 s() {
   project=${PWD##*/}
   if [ -f "$project.sublime-project" ]; then
@@ -33,4 +35,21 @@ random() {
     else
       cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w $1 | head -n 1
   fi
+}
+
+# Warning: you should have /usr/bin/git-grep for this function to work
+git()
+{
+    typeset -r gitAlias="git-$1"
+    if 'which' "$gitAlias" >/dev/null 2>&1; then
+        shift
+        "$gitAlias" "$@"
+    elif [[ "$1" =~ [A-Z] ]]; then
+        # Translate "X" to "-x" to enable aliases with uppercase letters.
+        translatedAlias=$(echo "$1" | sed -e 's/[A-Z]/-\l\0/g')
+        shift
+        "$(which git)" "$translatedAlias" "$@"
+    else
+        "$(which git)" "$@"
+    fi
 }
